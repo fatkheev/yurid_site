@@ -1,0 +1,709 @@
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../FONTS/Roboto-Regular.eot");
+  src: url("../FONTS/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../FONTS/Roboto-Regular.woff") format("woff"),
+    url("../FONTS/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Bold";
+  src: url("../FONTS/ProximaNova-Bold.eot");
+  src: url("../FONTS/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../FONTS/ProximaNova-Bold.woff") format("woff"),
+    url("../FONTS/ProximaNova-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Proxima Nova Semibold";
+  src: url("../FONTS/ProximaNova-Semibold.eot");
+  src: url("../FONTS/ProximaNova-Semibold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../FONTS/ProximaNova-Semibold.woff") format("woff"),
+    url("../FONTS/ProximaNova-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Теперь свойства width и height включают в себя значения padding и border, но не margin */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* Настройки содержания страницы */
+body {
+  margin: 0;
+  font-family: "Roboto Regular";
+  font-size: 16pt;
+  color: #575757;
+  line-height: 0.7;
+}
+
+/* Bootstrap контейнер */
+.container {
+  width: 100%;
+  max-width: 1537px;
+  margin: 0 auto;
+}
+
+/* Header (Навигационная панель) */
+.header {
+  padding-top: 20px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 25px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s linear;
+}
+
+.nav__link:hover {
+  color: #2f93d8;
+}
+
+.info__phone {
+  width: 100%;
+  max-width: 212px;
+  color: white;
+}
+
+.info__phone .tel a {
+  font-size: 20pt;
+  text-decoration: none;
+  color: white;
+  transition: color 0.2s linear;
+}
+
+.info__phone .tel a:hover {
+  color: #2f93d8;
+}
+
+/* Фон страницы */
+.intro {
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+  width: 100%;
+  height: 830px;
+  background: url(../IMG/взыскание.png) center no-repeat;
+  background-size: cover;
+  background-position: 25% 0%;
+}
+
+.intro__tittle {
+  color: white;
+  font-size: 35pt;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.intro__inner {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.subintro__tittle {
+  color: white;
+  font-family: "Proxima Nova Semibold";
+  font-size: 26pt;
+  text-align: center;
+}
+
+/* Нижняя часть интро страницы */
+.row.intro__content {
+  padding-top: 65px;
+}
+
+.col-md-8 li {
+  list-style: none;
+  color: white;
+}
+
+.col-md-8 h3 {
+  color: white;
+  padding-left: 30px;
+  padding-bottom: 15px;
+}
+
+.col-md-8 li:before {
+  background: url(../IMG/check-white.png) no-repeat;
+  padding-left: 40px;
+  content: "";
+  line-height: 2.8;
+  align-self: center;
+}
+
+.form {
+  background-color: white;
+  width: 385px;
+  height: 345px;
+}
+
+.form__tittle {
+  color: #2f93d8;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 7%;
+  width: 100%;
+  max-width: 369px;
+  font-size: 16pt;
+  line-height: 1.1;
+}
+
+.form__pole {
+  width: 100%;
+  max-width: 322px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.form-control {
+  height: 55px;
+}
+
+.form__button {
+  width: 100%;
+  text-align: center;
+}
+
+.btn {
+  height: 55px;
+  background-color: #2f93d8;
+  border-color: #1c95e8;
+  font-family: "Proxima Nova Semibold";
+}
+
+/* Блок сайта 2(Удобная схема сотрудничества) */
+.sotr__down__inner {
+  max-width: 265px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.container__sotr {
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.sotr__down__inner__up {
+  margin: 0 auto;
+}
+
+.sotr__down__inner__down {
+  font-size: 15pt;
+  padding-top: 30px;
+}
+
+.sotr__down__inner__down p {
+  margin-bottom: 0rem;
+}
+
+.sotr__down__inner__down a {
+  font-size: 15pt;
+  text-decoration: none;
+  transition: color 0.2s linear;
+  color: #2f93d8;
+}
+
+.sotr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 100px;
+}
+
+.strelka {
+  min-width: 20px;
+  padding-top: 45px;
+}
+
+.sotr__up {
+  font-size: 49pt;
+}
+
+/* Блок 3 (Уже с нами) */
+.nam__inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.nam__main {
+  padding-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.logo__up {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  flex-wrap: wrap;
+}
+
+.logo__down {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 0 100px 0;
+  flex-wrap: wrap;
+}
+
+.nam__main p {
+  text-transform: uppercase;
+  margin-bottom: 0rem;
+  font-size: 49pt;
+  text-align: center;
+}
+
+/* Блок 4 (Выбор тарифного плана) */
+.plan {
+  padding-top: 100px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.plan__main {
+  font-size: 49pt;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.plan__main p {
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.nav-tabs {
+  border-bottom: none;
+  margin: 0 auto;
+}
+
+.nav-link {
+  height: 100%;
+  width: 100%;
+  color: #575757;
+}
+
+.nav-tabs .nav-link {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.nav-link:hover {
+  color: #424242;
+}
+
+.nav-item {
+  border-style: solid;
+  height: 80px;
+  border-width: 2px;
+  border-color: #e3e3e3;
+  width: 200px;
+}
+
+.left-item {
+  border-left: 0px;
+}
+
+.nav-item p {
+  line-height: 1.3;
+  font-size: 18px;
+  margin: 0 auto;
+}
+
+.left-item:active {
+  border: 0px;
+}
+
+.tab-content {
+  margin: 0 auto;
+}
+
+.nav-tabs .nav-item.show .nav-item.active .nav-link,
+.nav-tabs .nav-link.active {
+  color: white;
+  background-color: #2f93d8;
+  border-color: #fafafa;
+  border-style: solid;
+  border-radius: unset;
+  border-width: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.plan__inner {
+  display: inline-flex;
+  justify-content: center;
+  padding-top: 100px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.plan__inner__block {
+  width: 340px;
+  height: 430px;
+  margin-bottom: 5%;
+}
+
+.plan__inner__block__main {
+  font-size: 30pt;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.plan__inner__block__price {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.cian__big {
+  color: #2f93d8;
+  font-size: 30px;
+  font-family: "Proxima Nova Semibold";
+}
+
+.cian__small {
+  font-family: "Roboto Regular";
+  font-size: 14px;
+}
+
+.plan__inner__block__content {
+  font-family: "Roboto Regular";
+  font-size: 14pt;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+
+.form__button {
+  padding-top: 20px;
+}
+
+.plan__inner__block__button .form__button .btn .btn-primary .col-10 {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.bloc__c {
+  height: 470px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.bloc__c .form__button {
+  padding-top: 60px;
+}
+
+/* Блок 5 (первичная консультация) */
+
+.cons {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 720px;
+  background-color: #2f93d8;
+  margin-top: 120px;
+}
+
+.cons__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 55px;
+  color: white;
+  width: 50%;
+}
+
+.cons__left__up {
+  font-family: "Roboto Regular";
+  text-transform: uppercase;
+  font-size: 58pt;
+  line-height: 1.4;
+}
+
+.cons__left__down {
+  font-family: "Proxima Nova Semibold";
+  text-transform: uppercase;
+  font-size: 35pt;
+  padding-top: 40px;
+}
+
+.cons__right {
+  display: flex;
+  padding-left: 20%;
+  padding-top: 10%;
+}
+
+.form__down {
+  height: 380px;
+}
+
+.form__href {
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Roboto Regular";
+}
+
+.form__href {
+  text-align: center;
+  padding-top: 26px;
+  font-family: "Roboto Regular";
+  font-size: 11pt;
+}
+
+.form__href a {
+  text-decoration: none;
+  color: #2e93d8;
+  transition: color 0.2s linear;
+}
+
+.form__href a:hover {
+  text-decoration: none;
+  color: #1d6a9e;
+}
+
+/* Подвал */
+.footer {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.footer__inner {
+  flex-basis: auto;
+  width: 33.333333%;
+  font-family: "Roboto Regular";
+  font-size: 12pt;
+}
+
+.footer__inner__info__right {
+  text-align: right;
+  padding-left: 200px;
+  line-height: 1.6;
+}
+
+/* Мобильная версия */
+
+@media (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .container__sotr {
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 0;
+  }
+
+  .logo img {
+    width: 280px;
+  }
+
+  .nav__up {
+    display: grid;
+    padding-top: 25px;
+    font-size: 23pt;
+  }
+
+  .nav__up a {
+    max-width: 100%;
+    line-height: 1.1;
+  }
+
+  .form__pole {
+    width: 100%;
+    max-width: 263px;
+    margin: 0 auto;
+    padding-top: 11px;
+  }
+
+  .sotr {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 100px;
+    align-items: center;
+  }
+
+  .sotr__up {
+    font-size: 35pt;
+    line-height: 1.1;
+  }
+
+  .sotr__down__inner {
+    max-width: 265px;
+    text-align: center;
+    line-height: 1.3;
+    padding-top: 30px;
+  }
+
+  .strelka {
+    display: none;
+  }
+
+  .header__inner {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .intro__inner {
+    padding-top: 350px;
+    text-align: center;
+  }
+
+  .info__phone {
+    display: flex;
+    margin: 0 auto;
+    padding-top: 30px;
+    max-width: 250px;
+    justify-content: center;
+  }
+
+  .intro__tittle {
+    font-size: 25pt;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    width: 100%;
+    height: 1500px;
+    background: url(../IMG/взыскание.png) center no-repeat;
+    background-size: cover;
+    background-position: 25% 0%;
+  }
+
+  .col-md-8 li {
+    line-height: 1.5;
+  }
+
+  .form {
+    background-color: white;
+    width: 100%;
+    height: 345px;
+  }
+
+  .plan__main {
+    font-size: 20pt;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  .plan__inner {
+    padding-top: 10%;
+  }
+
+  .plan__inner__block__main {
+    font-size: 30pt;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .plan__inner__block {
+    width: 304px;
+    height: 520px;
+  }
+
+  .bloc__c {
+    margin-bottom: 5%;
+  }
+
+  .cons__left__up {
+    font-family: "Roboto Regular";
+    text-transform: uppercase;
+    font-size: 20pt;
+    line-height: 1.4;
+    display: flex;
+    text-align: center;
+    width: 292px;
+  }
+
+  .cons__left__down {
+    font-family: "Proxima Nova Semibold";
+    text-transform: uppercase;
+    font-size: 35pt;
+    padding-top: 40px;
+    width: 292px;
+    text-align: center;
+    line-height: 1.1;
+  }
+
+  .cons__right {
+    display: flex;
+    padding-top: 10%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .nam__main p {
+    text-transform: uppercase;
+    margin-bottom: 0rem;
+    font-size: 43pt;
+    text-align: center;
+  }
+
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    padding-top: 20px;
+    flex-direction: column;
+  }
+
+  .footer__inner {
+    flex-basis: auto;
+    width: 100%;
+    font-family: "Roboto Regular";
+    font-size: 12pt;
+    text-align: center;
+  }
+
+  .footer__inner__info__right {
+    text-align: center;
+    padding-left: 0;
+    line-height: 1.1;
+    font-size: 10pt;
+    padding-top: 7%;
+  }
+
+  .footer__inner img {
+    width: 55%;
+    padding-bottom: 7%;
+  }
+}
